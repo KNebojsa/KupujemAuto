@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using WebAssigmentAutoKP.Models;
+using X.PagedList;
 
 namespace WebAssigmentAutoKP.Controllers
 {
@@ -57,10 +58,6 @@ namespace WebAssigmentAutoKP.Controllers
                 );
             return Redirect(sourceUrl);
         }
-
-     
-
-
         // GET: Automobil
         public async Task<IActionResult> Index()
         {
@@ -235,5 +232,14 @@ namespace WebAssigmentAutoKP.Controllers
         {
             return db.Automobili.Any(e => e.AutomobilId == id);
         }
+
+        public IActionResult PrikaziProizvode(int? strana)
+        { //strana koju zelimo da prikazemo, strana zavisi od broja proizvoda po strani, kome mi oznacimo
+            IEnumerable<Automobil> listaProizvoda = db.Automobili;
+            int brojStrane = strana ?? 1; //ovo znaci ako nije prosledjena neka strana, prosledjuje se 1
+            int brojRedova = 6; //koliko redova po strani prikazuje
+            return View(listaProizvoda.ToPagedList(brojStrane, brojRedova)); //prvo priakzemo koju stranicu zelimo da prikazemo a ovo je konstanta koja predstavlja broj redova po strani
+        }
+
     }
 }

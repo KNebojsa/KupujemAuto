@@ -1761,9 +1761,6 @@ C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssi
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.csproj.GenerateResource.cache
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.AssemblyInfoInputs.cache
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.AssemblyInfo.cs
-C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.csproj.CoreCompileInputs.cache
-C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.RazorAssemblyInfo.cache
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.RazorAssemblyInfo.cs
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\en\WebAssigmentAutoKP.resources.dll
@@ -1802,3 +1799,12 @@ C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssi
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.dll
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.pdb
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.genruntimeconfig.cache
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\bin\Debug\netcoreapp3.1\X.PagedList.dll
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\bin\Debug\netcoreapp3.1\X.PagedList.Mvc.Core.dll
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\bin\Debug\netcoreapp3.1\X.PagedList.Web.Common.dll
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.csproj.CoreCompileInputs.cache
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\Razor\Views\Automobil\PrikaziProizvode.cshtml.g.cs

@@ -105,7 +105,7 @@ namespace WebAssigmentAutoKP
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Automobil}/{action=Index}/{id?}");
+                    pattern: "{controller=Automobil}/{action=PrikaziProizvode}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
