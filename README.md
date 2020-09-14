@@ -1,2 +1,2 @@
 # KupujemAuto
-Aplikacija za kupovinu automobila
+Aplikacija za kupovinu automobila DEMO (Vezba)
