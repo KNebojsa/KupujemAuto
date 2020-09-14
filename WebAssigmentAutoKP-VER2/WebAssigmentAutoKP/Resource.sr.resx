@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Automobili" xml:space="preserve">
+    <value>Automobili</value>
+  </data>
   <data name="Brisanje" xml:space="preserve">
     <value>Brisanje</value>
   </data>
   <data name="Cena" xml:space="preserve">
-    <value>Cena</value>
+    <value>Cena </value>
   </data>
   <data name="Detalji" xml:space="preserve">
     <value>Detalji</value>
@@ -151,7 +154,7 @@
     <value>Godisnji Promet</value>
   </data>
   <data name="Godiste" xml:space="preserve">
-    <value>Godiste</value>
+    <value>Godiste </value>
   </data>
   <data name="Gorivo" xml:space="preserve">
     <value>Gorivo</value>
@@ -172,6 +175,9 @@
     <value>Karoserija</value>
   </data>
   <data name="Kontakt" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="KontaktInfo" xml:space="preserve">
     <value>Kontakt</value>
   </data>
   <data name="KontaktirajteNas" xml:space="preserve">
@@ -208,10 +214,10 @@
     <value>Maksimalno 50 Karaktera</value>
   </data>
   <data name="Marka" xml:space="preserve">
-    <value>Marka</value>
+    <value>Marka </value>
   </data>
   <data name="Model" xml:space="preserve">
-    <value>Model</value>
+    <value>Model </value>
   </data>
   <data name="NasaProdavnaMjesta" xml:space="preserve">
     <value>Nasa Prodavna Mjesta</value>
@@ -275,6 +281,9 @@
   </data>
   <data name="SviOglasi" xml:space="preserve">
     <value>Svi oglasi</value>
+  </data>
+  <data name="TestTest" xml:space="preserve">
+    <value>&amp;nbsp&amp;nbsp&amp;nbspIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</value>
   </data>
   <data name="UlogujteSeZaBrisanje" xml:space="preserve">
     <value>Ulogujte se da biste obrisali oglas</value>
