@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jY+3tgOBAl8pp7V82f51j9ZaGxX7TrHgVmn6nJvXFEmnUtfI5FTznGRiu31tL65hwafJqN0t16gJnYpj4NXy9Q==",
+  "dgSpecHash": "mDucF5B6KYdZl4KRjDHzjLKrlL4HOGIwjvag22zi8AJhcLhgg5HBZyco6FS5i+OSOKkOY7xAZ79OCWgzB8jKfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nebojsa\\Desktop\\projekat za git hub\\Git\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\WebAssigmentAutoKP.csproj",
+  "projectFilePath": "C:\\Users\\Nebojsa\\Desktop\\Git Uploads\\KupujemAuto\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\WebAssigmentAutoKP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nebojsa\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.6\\microsoft.aspnetcore.cryptography.internal.3.1.6.nupkg.sha512",
     "C:\\Users\\Nebojsa\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.6\\microsoft.aspnetcore.cryptography.keyderivation.3.1.6.nupkg.sha512",

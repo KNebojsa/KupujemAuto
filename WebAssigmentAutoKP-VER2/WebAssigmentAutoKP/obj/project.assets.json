@@ -8963,11 +8963,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nebojsa\\Desktop\\projekat za git hub\\Git\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\WebAssigmentAutoKP.csproj",
+      "projectUniqueName": "C:\\Users\\Nebojsa\\Desktop\\Git Uploads\\KupujemAuto\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\WebAssigmentAutoKP.csproj",
       "projectName": "WebAssigmentAutoKP",
-      "projectPath": "C:\\Users\\Nebojsa\\Desktop\\projekat za git hub\\Git\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\WebAssigmentAutoKP.csproj",
+      "projectPath": "C:\\Users\\Nebojsa\\Desktop\\Git Uploads\\KupujemAuto\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\WebAssigmentAutoKP.csproj",
       "packagesPath": "C:\\Users\\Nebojsa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nebojsa\\Desktop\\projekat za git hub\\Git\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\obj\\",
+      "outputPath": "C:\\Users\\Nebojsa\\Desktop\\Git Uploads\\KupujemAuto\\WebAssigmentAutoKP-VER2\\WebAssigmentAutoKP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
