@@ -1,0 +1,113 @@
+﻿body {
+    background-color: #F0F8FF;
+    font-family: Roboto, Helvetica, Arial, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.margine {
+    margin: 0;
+    padding: 0;
+}
+.logoPA {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+#wrapper {
+    width: 1000px;
+    overflow: hidden;
+    margin: 15px auto;
+    background-color: aliceblue;
+    padding: 0 15px;
+    box-shadow: 2px 4px 6px #777;
+    border-radius: 4px;
+}
+
+#heading {
+    width: 1000px;
+    color: white;
+    background-color: #33ccff;
+    text-align: center;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+
+.nav {
+    margin-top: 10px;
+    
+    clear: both;
+    float: left;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}
+
+#main {
+    width: 660px;
+    float: left;
+    margin: 0 0 15px;
+}
+
+#footer {
+    text-align: center;
+    clear: both;
+    width: 1000px;
+    height: 20px;
+    background-color: red;
+}
+
+#sidebar {
+    width: 280px;
+    float: right;
+    margin: 0 0 15px;
+}
+
+    #sidebar .widget {
+        margin: 0 0 30px;
+        
+    }
+
+
+        #sidebar .widget h2 {
+            background: #33ccff;
+            color: #FFFFFF;
+            padding: 4px;
+        }
+
+#footer {
+    clear: both;
+    background: #33ccff;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    margin: 15px 0;
+    padding: 5px 0;
+    position: center;
+}
+
+    #footer p {
+        margin: 0;
+    }
+
+.proizvodi {
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .proizvodi h2 {
+        color: #33ccff;
+    }
+
+h1 {
+    color: #33ccff;
+}
+
+h2 {
+    color: #33ccff;
+}

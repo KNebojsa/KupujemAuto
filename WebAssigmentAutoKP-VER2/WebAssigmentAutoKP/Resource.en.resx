@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Brisanje" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Cena" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Detalji" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DodajAuto" xml:space="preserve">
+    <value>Add  vehicles</value>
+  </data>
+  <data name="DodajAutomobil" xml:space="preserve">
+    <value>Add vehicles</value>
+  </data>
+  <data name="DodajOglas" xml:space="preserve">
+    <value>Add vehicles</value>
+  </data>
+  <data name="DodajteSliku" xml:space="preserve">
+    <value>Add a picture of the vehicle</value>
+  </data>
+  <data name="EvropskiPreprodavci" xml:space="preserve">
+    <value>European Resellers</value>
+  </data>
+  <data name="FormaMaila" xml:space="preserve">
+    <value>You must enter a valid email</value>
+  </data>
+  <data name="Fotografija" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="GodisnjiPromet" xml:space="preserve">
+    <value>Annual Turnover</value>
+  </data>
+  <data name="Godiste" xml:space="preserve">
+    <value>Godis
+Year of productionte</value>
+  </data>
+  <data name="Gorivo" xml:space="preserve">
+    <value>Fuel type</value>
+  </data>
+  <data name="Ime" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="IzmjenaAutomobila" xml:space="preserve">
+    <value>Change vehicle</value>
+  </data>
+  <data name="Izmjeni" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="KakoDoNas" xml:space="preserve">
+    <value>How to find us</value>
+  </data>
+  <data name="Karoserija" xml:space="preserve">
+    <value>Car body</value>
+  </data>
+  <data name="Kontakt" xml:space="preserve">
+    <value>Contant</value>
+  </data>
+  <data name="KontaktirajteNas" xml:space="preserve">
+    <value>Contant us</value>
+  </data>
+  <data name="KorisnickoIme" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Korisnik" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="KratkaIstorija" xml:space="preserve">
+    <value>A Brief History</value>
+  </data>
+  <data name="KreirajOglas" xml:space="preserve">
+    <value>Add  vehicles</value>
+  </data>
+  <data name="KupiteKodNas" xml:space="preserve">
+    <value>Buy from us</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Logovanje" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Lozinka" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Maksimalno200Karaktera" xml:space="preserve">
+    <value>Maximum 200 Characters</value>
+  </data>
+  <data name="Maksimalno50Karaktera" xml:space="preserve">
+    <value>Maximum 50Characters</value>
+  </data>
+  <data name="Marka" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="NasaProdavnaMjesta" xml:space="preserve">
+    <value>Our Outlets</value>
+  </data>
+  <data name="ObaveznoPopuniti" xml:space="preserve">
+    <value>You must enter a valid information</value>
+  </data>
+  <data name="Obrisi" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Odustani" xml:space="preserve">
+    <value>Abort action</value>
+  </data>
+  <data name="ONama" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="Opis" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="OPolovnimAutomobilima" xml:space="preserve">
+    <value>About our buissnes</value>
+  </data>
+  <data name="Pocetna" xml:space="preserve">
+    <value>Home page</value>
+  </data>
+  <data name="PolovniAutomobili" xml:space="preserve">
+    <value>Polovni Automobili</value>
+  </data>
+  <data name="PotraziteNas" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="PotraziteSavjetOdStrucnjaka" xml:space="preserve">
+    <value>Seek the advice of our experts</value>
+  </data>
+  <data name="Potvrda" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="PotvrdiBrisanje" xml:space="preserve">
+    <value>Are you sure you want to delete the vehicle</value>
+  </data>
+  <data name="PotvrdiLozinku" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="Prezime" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="RazliciteLozinke" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Registracija" xml:space="preserve">
+    <value>Registration !</value>
+  </data>
+  <data name="RegistrujteSe" xml:space="preserve">
+    <value>Register if you do not have an account, register here</value>
+  </data>
+  <data name="Snaga" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="SviOglasi" xml:space="preserve">
+    <value>All vehicles</value>
+  </data>
+  <data name="UlogujteSeZaBrisanje" xml:space="preserve">
+    <value>Log in to delete your vehicle</value>
+  </data>
+  <data name="UlogujteSeZaKreiranje" xml:space="preserve">
+    <value>Ulogujte se za kreiranje oglasa
+Log in to create vehicle</value>
+  </data>
+  <data name="UlogujteSeZaPromjenu" xml:space="preserve">
+    <value>Log in to change vehicle info</value>
+  </data>
+  <data name="VratiPocetnu" xml:space="preserve">
+    <value>Go back to the home page</value>
+  </data>
+  <data name="ZapamtiMe" xml:space="preserve">
+    <value>Remmeber me</value>
+  </data>
+  <data name="ZapreminaMotora" xml:space="preserve">
+    <value>Engine displacement</value>
+  </data>
+  <data name="ZastoBasMi" xml:space="preserve">
+    <value>Why us?</value>
+  </data>
+</root>

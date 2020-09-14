@@ -1,0 +1,162 @@
+﻿@model WebAssigmentAutoKP.Models.Automobil
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+@if (SignInManager.IsSignedIn(User))
+{<h1>@localizer["KreirajOglas"]</h1>
+
+ <div class="container">
+
+         <div class="col-md-12">
+             <form asp-action="Create" enctype="multipart/form-data">
+
+
+                 <div class="col-md-12">
+                     <div class="form-group">
+                         <p id="p1">@localizer["DodajteSliku"]</p>
+                         <img id="img1" src="" class="col-md-12" />
+                         <br />
+                         <br />
+                         <input type="file" id="File1" name="odabranaSlika" onchange="DodajSliku()" />
+                         <br />
+                         <br />
+                     </div>
+                 </div>
+
+
+                 <div class="row">
+                     <div class="col-md-6">
+                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                         <div class="form-group">
+                             <label asp-for="KorisnickoIme" class="control-label"></label>
+                             <input asp-for="KorisnickoIme" class="form-control" readonly value="@UserManager.GetUserName(User)" />
+                             <span asp-validation-for="KorisnickoIme" class="text-danger"></span>
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="Marka" class="control-label"></label>
+                             <input asp-for="Marka" class="form-control" />
+                             <span asp-validation-for="Marka" class="text-danger"></span>
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="Model" class="control-label"></label>
+                             <input asp-for="Model" class="form-control" />
+                             <span asp-validation-for="Model" class="text-danger"></span>
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="Godiste" class="control-label"></label>
+                             <input asp-for="Godiste" class="form-control" />
+                             <span asp-validation-for="Godiste" class="text-danger"></span>
+                         </div>
+
+                         <div class="form-group">
+                             <label asp-for="ZapreminaMotora" class="control-label"></label>
+                             <input asp-for="ZapreminaMotora" class="form-control" />
+                             <span asp-validation-for="ZapreminaMotora" class="text-danger"></span>
+                         </div>
+                     </div>
+
+
+                     <div class="col-md-6 ">
+                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                         <div class="form-group">
+                             <label asp-for="Snaga" class="control-label"></label>
+                             <input asp-for="Snaga" class="form-control" />
+                             <span asp-validation-for="Snaga" class="text-danger"></span>
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="Gorivo" class="control-label"></label>
+                             <input asp-for="Gorivo" class="form-control" />
+                             <span asp-validation-for="Gorivo" class="text-danger"></span>
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="Karoserija" class="control-label"></label>
+                             <input asp-for="Karoserija" class="form-control" />
+                             <span asp-validation-for="Karoserija" class="text-danger"></span>
+                         </div>
+
+                         <div class="form-group">
+                             <label asp-for="Cena" class="control-label"></label>
+                             <input asp-for="Cena" class="form-control" />
+                             <span asp-validation-for="Cena" class="text-danger"></span>
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="Kontakt" class="control-label"></label>
+                             <input asp-for="Kontakt" class="form-control" />
+                             <span asp-validation-for="Kontakt" class="text-danger"></span>
+                         </div>
+
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-12">
+                         <div class="form-group">
+                             <label asp-for="Opis" class="control-label"></label>
+                             <textarea asp-for="Opis" class="form-control"></textarea>
+                             <span asp-validation-for="Opis" class="text-danger"></span>
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <input type="submit" value="@localizer["DodajOglas"]" class="btn btn-primary" onclick="Validacija()" />
+                     </div>
+                 </div>
+             </form>
+             </div>
+ </div>
+     
+
+
+}
+else
+{
+<h4>@localizer["UlogujteSeZaKreiranje"]  <a class="table-hover" asp-area="Identity" asp-page="/Account/Login">@localizer["Logovanje"]</a></h4>
+<br />
+
+<h4>@localizer["RegistrujteSe"]  <a class="table-hover" asp-area="Identity" asp-page="/Account/Register">@localizer["Registracija"]</a></h4>
+
+
+<br />
+
+<a asp-action="Index">@localizer["VratiPocetnu"]</a>
+
+}
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function DodajSliku() {
+            var File1 = document.getElementById("File1");
+            var img1 = document.getElementById("img1");
+            var file = File1.files[0];
+            if (file != null && file.type.match(/image.*/)) {
+                var reader = new FileReader();
+                reader.readAsDataURL(file)
+                reader.onload = function () {
+                    img1.src = reader.result;
+                };
+            }
+            else {
+                img1.setAttribute("src", "");
+            }
+        }
+        function Validacija() {
+
+            var src = $("#img1").attr("src");
+            if (src == "") {
+                //ako je prazan string znaci da nismo odabrali sliku, znaci nije se desio onchange dogadjaj
+                $("#p1").html("Niste odabrali sliku");
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+
+}
+
