@@ -264,6 +264,9 @@
   <data name="Prezime" xml:space="preserve">
     <value>Cognome</value>
   </data>
+  <data name="Pronadji" xml:space="preserve">
+    <value>Trova</value>
+  </data>
   <data name="RazliciteLozinke" xml:space="preserve">
     <value>le passwords non corrispondono</value>
   </data>
@@ -293,6 +296,18 @@
   </data>
   <data name="UlogujteSeZaPromjenu" xml:space="preserve">
     <value>Accedi per una modifica</value>
+  </data>
+  <data name="UnesiteMarku" xml:space="preserve">
+    <value>Inserisci la marca del veicolo</value>
+  </data>
+  <data name="UnesiteMaxCenu" xml:space="preserve">
+    <value>Inserisci il prezzo massimo</value>
+  </data>
+  <data name="UnesiteMinCenu" xml:space="preserve">
+    <value>Inserisci il prezzo minimo</value>
+  </data>
+  <data name="UnesiteModel" xml:space="preserve">
+    <value>Inserisci il modello del veicolo</value>
   </data>
   <data name="VratiPocetnu" xml:space="preserve">
     <value>Torna alla Pagina iniziale</value>

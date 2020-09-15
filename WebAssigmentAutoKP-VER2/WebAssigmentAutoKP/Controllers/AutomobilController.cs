@@ -237,7 +237,7 @@ namespace WebAssigmentAutoKP.Controllers
         {
             return db.Automobili.Any(e => e.AutomobilId == id);
         }
-        public PartialViewResult _PretragaCena(double? min, double? max,string deoNaslova, int AutomobilId = 0) //mora da se zove isto kao i name atribut select controle KategorijaId i ti parametri mojau da se nadju na kraju 
+        public PartialViewResult _PretragaCena(double? min, double? max,string deoNaslova, string deoModela, int AutomobilId = 0) //mora da se zove isto kao i name atribut select controle KategorijaId i ti parametri mojau da se nadju na kraju 
         {
             IEnumerable<Automobil> listaAutomobila = db.Automobili;
             if (AutomobilId != 0)
@@ -261,6 +261,10 @@ namespace WebAssigmentAutoKP.Controllers
             if (!string.IsNullOrWhiteSpace(deoNaslova))
             {
                 listaAutomobila = listaAutomobila.Where(f => f.Marka.ToLower().Contains(deoNaslova.ToLower()));
+            }
+            if (!string.IsNullOrWhiteSpace(deoModela))
+            {
+                listaAutomobila = listaAutomobila.Where(f => f.Model.ToLower().Contains(deoModela.ToLower()));
             }
             if (min == null)
             {
