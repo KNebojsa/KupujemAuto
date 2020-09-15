@@ -65,6 +65,7 @@ namespace WebAssigmentAutoKP.Controllers
             IEnumerable<Automobil> listaProizvoda = db.Automobili;
             int brojStrane = strana ?? 1; //ovo znaci ako nije prosledjena neka strana, prosledjuje se 1
             int brojRedova = 6; //koliko redova po strani prikazuje
+            ViewBag.Automobili = new SelectList(db.Automobili, "AutomobilId", "Model");
             return View(listaProizvoda.ToPagedList(brojStrane, brojRedova)); //prvo priakzemo koju stranicu zelimo da prikazemo a ovo je konstanta koja predstavlja broj redova po strani
         }
 
@@ -235,6 +236,40 @@ namespace WebAssigmentAutoKP.Controllers
         private bool AutomobilExists(int id)
         {
             return db.Automobili.Any(e => e.AutomobilId == id);
+        }
+        public PartialViewResult _PretragaCena(double? min, double? max, int AutomobilId = 0) //mora da se zove isto kao i name atribut select controle KategorijaId i ti parametri mojau da se nadju na kraju 
+        {
+            IEnumerable<Automobil> listaAutomobila = db.Automobili;
+            if (AutomobilId != 0)
+            {
+                Automobil k1 = db.Automobili.Find(AutomobilId);
+                if (k1 != null)
+                {
+                    ViewBag.Automobil = k1.Marka;
+                    listaAutomobila = listaAutomobila.Where(p => p.AutomobilId == AutomobilId);
+                }
+                else
+                {
+                    ViewBag.Automobil = "";
+                    return PartialView();
+                }
+            }
+            else
+            {
+                ViewBag.Automobil = "Sve marke";
+            }
+            if (min == null)
+            {
+                min = listaAutomobila.Min(p => p.Cena);
+            }
+            if (max == null)
+            {
+                max = listaAutomobila.Max(p => p.Cena);
+            }
+            listaAutomobila = listaAutomobila.Where(p => p.Cena >= min && p.Cena <= max);
+
+            return PartialView(listaAutomobila);
+
         }
 
         //public IActionResult PrikaziProizvode(int? strana)

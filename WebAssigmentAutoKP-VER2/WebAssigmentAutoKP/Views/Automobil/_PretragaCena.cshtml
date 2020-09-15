@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WebAssigmentAutoKP.Models.Automobil>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@if (ViewBag.Automobil != "")
+{
+
+
+    <div class="row">
+        <div class="col-md-12">
+
+            @foreach (Automobil auto in Model)
+            {
+                <div class="slika">
+                    <h4>@auto.Marka @auto.Model @auto.Godiste</h4>
+                    <a asp-action="Details" asp-route-id="@auto.AutomobilId"><img src="@($"/Automobil/CitajSliku/{auto.AutomobilId}")" alt="" /></a>
+
+                    <p>@localizer["Korisnik"]: @auto.KorisnickoIme</p>
+                    <br />
+                    <p>@localizer["Cena"]:<a class="text-primary"> @auto.Cena €</a></p>
+                    <p>
+
+                        @if (UserManager.GetUserName(User) == auto.KorisnickoIme || UserManager.GetUserName(User) == "admin")
+                        {
+                        <p>
+                            <a asp-action="Delete" asp-route-id="@auto.AutomobilId">@localizer["Obrisi"]</a> |
+                            <a asp-action="Edit" asp-route-id="@auto.AutomobilId">@localizer["Promjeni"]</a> |
+                            <a asp-action="Details" asp-route-id="@auto.AutomobilId">@localizer["Detalji"]</a>
+                        </p>
+                    }
+                    else
+                    {
+                        <a asp-action="Details" asp-route-id="@auto.AutomobilId">@localizer["Detalji"]</a>
+                    }
+
+                    </div>
+                }
+
+        </div>
+    </div>
+}
+else
+{
+    <h3>Ne postoji trazeni automobil</h3>
+}
+
+@section Styles{
+    <style>
+        div.slika {
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 10px;
+            float: left;
+            margin: 10px;
+        }
+
+            div.slika img {
+                width: 280px;
+                height: 210px;
+                align-content: center;
+                margin-bottom: 10px;
+            }
+    </style>
+}

@@ -1808,3 +1808,4 @@ C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssi
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\WebAssigmentAutoKP.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\Razor\Views\Automobil\PrikaziProizvode.cshtml.g.cs
+C:\Users\Nebojsa\Desktop\Git Uploads\KupujemAuto\WebAssigmentAutoKP-VER2\WebAssigmentAutoKP\obj\Debug\netcoreapp3.1\Razor\Views\Automobil\_PretragaCena.cshtml.g.cs

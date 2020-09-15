@@ -7,6 +7,50 @@
 
 
 
+<div class="row">
+    <div class="col-md-7">
+        @*ako ovo upisemo data-ajax="true" onda postaje ajax zahtjev   data-ajax-update="#div1" (ovo je element koji se osvjezava ajax zahtjevom)  *@
+        <form asp-action="_PretragaCena" data-ajax="true" data-ajax-update="#div1">
+            <div class="form-group">
+                <select id="Select1" name="AutomobilId" class="form-control" asp-items="ViewBag.Automobili">
+                    <option value="0">Svi automobili</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <Label for="Text1">Unesite min cenu: </Label>
+                <input type="text" name="min" id="Text1" class="form-control" data-val="true" data-val-number="Unesite broj" />
+                <span data-valmsg-for="min" data-valmsg-replace="true"></span>
+                @*SADRZAJ SPAN ELEEMNTA ZAMJENI SADRZAJEM VALIDACIONE GRESKE ne mora da se uci napamet *@
+                @*ovo nam je omoguceno zbog unobtrusive data-val="true"    data-val-number="Unesite broj" --nece moci da da ide dalje ako ne unese broj, ovo nije dovoljno da se napise tu, moramo dodati i npr span element gdje ce se ispisati poruka greske to se dodaje
+
+                    data-valmsg-for="min"--unutar ovog span elementa ce se prikazivati validaciona greska za polje min
+
+                    data-valmsg-replace="true" sadrzaj span elementa zamjeni sadrzajem validacione greske *@
+
+            </div>
+
+            <div class="form-group">
+                <Label for="Text1">Unesite max cenu: </Label>
+                <input type="text" name="max" id="Text1" class="form-control" data-val="true" data-val-number="Unesite broj" />
+                <span data-valmsg-for="max" data-valmsg-replace="true"></span>
+            </div>
+
+            <button class="btn btn-primary">Pronadji proizvod</button>
+
+        </form>
+    </div>
+</div>
+
+
+@*<div class="row mt-3">
+    <div class="col-md-7" id="div1">
+
+    </div>
+</div>*@
+
+
+
 <div class="row ">
     <div class="ml-2 col-md-6">
         Strana @Model.PageNumber od @Model.PageCount
@@ -14,7 +58,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 " id="div1">
 
         @foreach (Automobil auto in Model)
         {
@@ -100,3 +144,13 @@
     </style>
 }
 
+@section Scripts{
+    @*ovo kopiramo iz _ValidationScriptsPartial.cshtml*@
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+    @*poslednju mi dodajemo*@
+    <script src="~/lib/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.min.js"></script>
+}
