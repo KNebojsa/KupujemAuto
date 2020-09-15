@@ -7,7 +7,7 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-.slika {
+div.slika {
     width: 300px;
     border-radius: 5px;
     border: 1px solid black;
@@ -85,3 +85,56 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+#nav {
+   
+    height: 50px;
+   
+}
+
+    #nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        #nav ul li {
+            float: left;
+        }
+
+            #nav ul li a {
+                display: block;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                padding: 10px 15px;
+                transition: 0.8s background ease;
+            }
+
+                #nav ul li a:link,
+                #nav ul li a:visited {
+                    color: #48D1CC;
+                    text-decoration: none;
+                }
+
+                #nav ul li a:hover {
+                    background: #48D1CC;
+                }
+
+                #nav ul li a:active {
+                    background: #48D1CC;
+                }
+
+.btn1 {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+    /* Style the active class (and buttons on mouse-over) */
+    .active, .btn1:hover {
+        background-color: #666;
+        color: white;
+    }

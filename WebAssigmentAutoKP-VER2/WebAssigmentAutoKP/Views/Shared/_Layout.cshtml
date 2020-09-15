@@ -6,34 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebAssigmentAutoKP</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
     <link href="~/css/Style/StyleSheet.css" rel="stylesheet" />
     @RenderSection("Styles", required: false)
+
 </head>
 <body>
     <header>
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 margine">
             <div class="container">
-                <a class="navbar-brand " asp-area="" asp-controller="Automobil" asp-action="Index"> <img class="logoPA" src="~/Slike/00106-3D-company-logos-design-free-logo-online-02.png" alt="nemaslike" height="60" /></a>
+                <a class="navbar-brand " asp-area="" asp-controller="Automobil" asp-action="Index"> <img class="logoPA" src="~/Slike/00106-3D-company-logos-design-free-logo-online-02.png" alt="nemaslike" height="50" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div id="nav" class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark logoPA" asp-area="" asp-controller="Automobil" asp-action="Index">@localizer["Automobili"]</a>
+                            <a class="nav-link text-dark logoPA " asp-area="" asp-controller="Automobil" asp-action="Index">@localizer["Automobili"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark logoPA" asp-area="" asp-controller="Automobil" asp-action="Create">@localizer["DodajAutomobil"]</a>
+                            <a class="nav-link text-dark logoPA " asp-area="" asp-controller="Automobil" asp-action="Create">@localizer["DodajAutomobil"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark logoPA" asp-area="" asp-controller="Automobil" asp-action="ONama">@localizer["Pocetna"]</a>
+                            <a class="nav-link text-dark logoPA " asp-area="" asp-controller="Automobil" asp-action="ONama">@localizer["Pocetna"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark logoPA" asp-area="" asp-controller="Automobil" asp-action="Kontakt">@localizer["KontaktInfo"]</a>
+                            <a class="nav-link text-dark logoPA " asp-area="" asp-controller="Automobil" asp-action="Kontakt">@localizer["KontaktInfo"]</a>
                         </li>
 
                     </ul>
