@@ -8,13 +8,17 @@
 
 
 <div class="row">
-    <div class="col-md-7">
+    <div class="col-md-5">
         @*ako ovo upisemo data-ajax="true" onda postaje ajax zahtjev   data-ajax-update="#div1" (ovo je element koji se osvjezava ajax zahtjevom)  *@
-        <form asp-action="_PretragaCena" data-ajax="true" data-ajax-update="#div1">
+        <form id="form1" asp-action="_PretragaCena"  data-ajax="true" data-ajax-update="#div1" asp-items="ViewBag.Automobili">
+            @*<div class="form-group">
+                    <select id="Select1" name="AutomobilId" class="form-control" asp-items="ViewBag.Automobili">
+                        <option value="0">Svi automobili</option>
+                    </select>
+                </div>*@
             <div class="form-group">
-                <select id="Select1" name="AutomobilId" class="form-control" asp-items="ViewBag.Automobili">
-                    <option value="0">Svi automobili</option>
-                </select>
+                <label for="text1">Unesite marku vozila:</label>
+                <input type="text" id="text1" name="deoNaslova" class="form-control" />
             </div>
 
             <div class="form-group">
@@ -36,18 +40,14 @@
                 <span data-valmsg-for="max" data-valmsg-replace="true"></span>
             </div>
 
-            <button class="btn btn-primary">Pronadji proizvod</button>
+            @*<button class="btn btn-primary">Pronadji proizvod</button>*@
+            <button class="btn btn-primary" type="button" onclick="Pronadji()">Pronadji</button>
 
         </form>
     </div>
 </div>
 
 
-@*<div class="row mt-3">
-    <div class="col-md-7" id="div1">
-
-    </div>
-</div>*@
 
 
 
@@ -145,6 +145,25 @@
 }
 
 @section Scripts{
+    <script>
+
+        function Pronadji() {
+            var podaci = $("#form1").serialize(); //name value parove vraca, i sami mozemo da iscitamo, ne moramo ovako
+            var zahtjev = $.ajax({
+                type: "GET",
+                url: "/Automobil/_PretragaCena",
+                data: podaci,
+                dataType: "html"
+            });
+            zahtjev.done(function (htmlString) {
+                $("#div1").html(htmlString);
+            });
+            zahtjev.fail(function (gr) {
+                $("#div").html(gr.statusText);
+            });
+        }
+    </script>
+
     @*ovo kopiramo iz _ValidationScriptsPartial.cshtml*@
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

@@ -237,7 +237,7 @@ namespace WebAssigmentAutoKP.Controllers
         {
             return db.Automobili.Any(e => e.AutomobilId == id);
         }
-        public PartialViewResult _PretragaCena(double? min, double? max, int AutomobilId = 0) //mora da se zove isto kao i name atribut select controle KategorijaId i ti parametri mojau da se nadju na kraju 
+        public PartialViewResult _PretragaCena(double? min, double? max,string deoNaslova, int AutomobilId = 0) //mora da se zove isto kao i name atribut select controle KategorijaId i ti parametri mojau da se nadju na kraju 
         {
             IEnumerable<Automobil> listaAutomobila = db.Automobili;
             if (AutomobilId != 0)
@@ -256,7 +256,11 @@ namespace WebAssigmentAutoKP.Controllers
             }
             else
             {
-                ViewBag.Automobil = "Sve marke";
+                ViewBag.Automobil = "Sve marke automobila";
+            }
+            if (!string.IsNullOrWhiteSpace(deoNaslova))
+            {
+                listaAutomobila = listaAutomobila.Where(f => f.Marka.ToLower().Contains(deoNaslova.ToLower()));
             }
             if (min == null)
             {
@@ -271,6 +275,7 @@ namespace WebAssigmentAutoKP.Controllers
             return PartialView(listaAutomobila);
 
         }
+        
 
         //public IActionResult PrikaziProizvode(int? strana)
         //{ //strana koju zelimo da prikazemo, strana zavisi od broja proizvoda po strani, kome mi oznacimo
