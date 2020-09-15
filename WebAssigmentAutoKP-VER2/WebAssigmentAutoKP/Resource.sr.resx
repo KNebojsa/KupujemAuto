@@ -264,6 +264,9 @@
   <data name="Prezime" xml:space="preserve">
     <value>Prezime</value>
   </data>
+  <data name="Promjeni" xml:space="preserve">
+    <value>Promjeni</value>
+  </data>
   <data name="Pronadji" xml:space="preserve">
     <value>Pronadji</value>
   </data>

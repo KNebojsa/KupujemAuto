@@ -264,6 +264,9 @@
   <data name="Prezime" xml:space="preserve">
     <value>Cognome</value>
   </data>
+  <data name="Promjeni" xml:space="preserve">
+    <value>Modificare</value>
+  </data>
   <data name="Pronadji" xml:space="preserve">
     <value>Trova</value>
   </data>
