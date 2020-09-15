@@ -202,7 +202,7 @@ button.accept-policy {
 
 
 
-#nav {
+/*#nav {
    
     height: 50px;
     
@@ -225,8 +225,8 @@ button.accept-policy {
             transition: 0.9s background ease;
         }
 
-            #nav ul li a:link,
-            #nav ul li a:visited {
+            #nav ul li a:link,*/
+         /*   #nav ul li a:visited {
                 color: #00BFFF;
                 text-decoration: none;
             }
@@ -237,7 +237,7 @@ button.accept-policy {
 
             #nav ul li a:active {
                 background: #00BFFF;
-            }
+            }*/
 
 
 
