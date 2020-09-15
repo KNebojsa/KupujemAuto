@@ -8,8 +8,7 @@
 
 
 
-   
-        @*ako ovo upisemo data-ajax="true" onda postaje ajax zahtjev   data-ajax-update="#div1" (ovo je element koji se osvjezava ajax zahtjevom)  *@
+@*ako ovo upisemo data-ajax="true" onda postaje ajax zahtjev   data-ajax-update="#div1" (ovo je element koji se osvjezava ajax zahtjevom)  *@
 <form id="form1" asp-action="_PretragaCena" data-ajax="true" data-ajax-update="#div1" asp-items="ViewBag.Automobili">
     @*<div class="form-group">
             <select id="Select1" name="AutomobilId" class="form-control" asp-items="ViewBag.Automobili">
@@ -30,7 +29,7 @@
             </div>
         </div>
 
-        </div>
+    </div>
     <div class="row">
         <div class="ml-1 col-md-5">
             <div class="form-group">
@@ -40,9 +39,9 @@
                 @*SADRZAJ SPAN ELEEMNTA ZAMJENI SADRZAJEM VALIDACIONE GRESKE ne mora da se uci napamet *@
                 @*ovo nam je omoguceno zbog unobtrusive data-val="true"    data-val-number="Unesite broj" --nece moci da da ide dalje ako ne unese broj, ovo nije dovoljno da se napise tu, moramo dodati i npr span element gdje ce se ispisati poruka greske to se dodaje
 
-                data-valmsg-for="min"--unutar ovog span elementa ce se prikazivati validaciona greska za polje min
+                    data-valmsg-for="min"--unutar ovog span elementa ce se prikazivati validaciona greska za polje min
 
-                data-valmsg-replace="true" sadrzaj span elementa zamjeni sadrzajem validacione greske *@
+                    data-valmsg-replace="true" sadrzaj span elementa zamjeni sadrzajem validacione greske *@
             </div>
         </div>
         <div class="mr-1 col-md-5">
@@ -54,17 +53,17 @@
             </div>
 
             @*<button class="btn btn-primary">Pronadji proizvod</button>*@
-           
+
         </div>
-        </div>
+    </div>
     @*<div class="row">
-        <div class="col-md-3 ml-2">
-           
-        </div>
-    </div>*@
-   
+            <div class="col-md-3 ml-2">
+
+            </div>
+        </div>*@
+
 </form>
-   
+
 
 
 
@@ -144,26 +143,6 @@
 </div>
 
 
-@section Styles{
-    <style>
-        div.slika {
-            width: 300px;
-            border-radius: 5px;
-            border: 1px solid black;
-            padding: 10px;
-            float: left;
-            margin: 10px;
-        }
-
-            div.slika img {
-                width: 280px;
-                height: 210px;
-                align-content: center;
-                margin-bottom: 10px;
-            }
-    </style>
-}
-
 @section Scripts{
     <script>
 
@@ -187,9 +166,26 @@
     @*ovo kopiramo iz _ValidationScriptsPartial.cshtml*@
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-
-
-
     @*poslednju mi dodajemo*@
     <script src="~/lib/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.min.js"></script>
 }
+
+@section Styles{
+        <style>
+            div.slika {
+                width: 300px;
+                border-radius: 5px;
+                border: 1px solid black;
+                padding: 10px;
+                float: left;
+                margin: 10px;
+            }
+
+                div.slika img {
+                    width: 280px;
+                    height: 210px;
+                    align-content: center;
+                    margin-bottom: 10px;
+                }
+        </style>
+    }
