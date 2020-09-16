@@ -4,10 +4,6 @@
 
 @model IPagedList<Automobil>
 
-
-
-
-
 @*ako ovo upisemo data-ajax="true" onda postaje ajax zahtjev   data-ajax-update="#div1" (ovo je element koji se osvjezava ajax zahtjevom)  *@
 <form id="form1" asp-action="_PretragaCena" data-ajax="true" data-ajax-update="#div1" asp-items="ViewBag.Automobili">
     @*<div class="form-group">
@@ -56,18 +52,8 @@
 
         </div>
     </div>
-    @*<div class="row">
-            <div class="col-md-3 ml-2">
-
-            </div>
-        </div>*@
 
 </form>
-
-
-
-
-
 
 
 <div class="row ">
