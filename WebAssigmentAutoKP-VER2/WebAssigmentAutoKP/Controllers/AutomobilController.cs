@@ -58,18 +58,14 @@ namespace WebAssigmentAutoKP.Controllers
                 );
             return Redirect(sourceUrl);
         }
-        // GET: Automobil
         public IActionResult Index(int? strana)
         {
-            //strana koju zelimo da prikazemo, strana zavisi od broja proizvoda po strani, kome mi oznacimo
             IEnumerable<Automobil> listaProizvoda = db.Automobili;
-            int brojStrane = strana ?? 1; //ovo znaci ako nije prosledjena neka strana, prosledjuje se 1
-            int brojRedova = 6; //koliko redova po strani prikazuje
+            int brojStrane = strana ?? 1;
+            int brojRedova = 6;
             ViewBag.Automobili = new SelectList(db.Automobili, "AutomobilId", "Model");
-            return View(listaProizvoda.ToPagedList(brojStrane, brojRedova)); //prvo priakzemo koju stranicu zelimo da prikazemo a ovo je konstanta koja predstavlja broj redova po strani
+            return View(listaProizvoda.ToPagedList(brojStrane, brojRedova));
         }
-
-        // GET: Automobil/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -86,16 +82,11 @@ namespace WebAssigmentAutoKP.Controllers
 
             return View(automobil);
         }
-
-        // GET: Automobil/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Automobil/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("AutomobilId,KorisnickoIme,Marka,Model,Godiste,ZapreminaMotora,Snaga,Gorivo,Karoserija,BinarniPodaci,TipFajla,Opis,Cena,Kontakt")] Automobil automobil,IFormFile odabranaSlika)
@@ -110,11 +101,10 @@ namespace WebAssigmentAutoKP.Controllers
                 {
                     using (MemoryStream ms = new MemoryStream())
                     {
-                        await odabranaSlika.CopyToAsync(ms);//te binarne podatke kopiram u memori stream(binarni podaci)
+                        await odabranaSlika.CopyToAsync(ms);
                         automobil.BinarniPodaci = ms.ToArray();
                     }
                     automobil.TipFajla = odabranaSlika.ContentType;
-                    //sada je objekat slika dopunjen sa podacima iz prosledjenog file-a
                     db.Add(automobil);
                     await db.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
@@ -129,7 +119,6 @@ namespace WebAssigmentAutoKP.Controllers
             return View(automobil);
         }
 
-        // GET: Automobil/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -146,9 +135,6 @@ namespace WebAssigmentAutoKP.Controllers
              return View(automobil);
         }
 
-        // POST: Automobil/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("AutomobilId,KorisnickoIme,Marka,Model,Godiste,ZapreminaMotora,Snaga,Gorivo,Karoserija,BinarniPodaci,TipFajla,Opis,Cena,Kontakt")] Automobil automobil,IFormFile odabranaSlika, int promena=0)
@@ -157,10 +143,7 @@ namespace WebAssigmentAutoKP.Controllers
             {
                 ModelState.AddModelError("BinarniPodaci", "Niste odabrali sliku");
             }
-            //if (id != slika.SlikaId)
-            //{
-            //    return NotFound();
-            //}
+
             Automobil sl = db.Automobili.Find(automobil.AutomobilId);
 
             if (ModelState.IsValid)
@@ -204,7 +187,6 @@ namespace WebAssigmentAutoKP.Controllers
             return View(automobil);
         }
 
-        // GET: Automobil/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -222,7 +204,6 @@ namespace WebAssigmentAutoKP.Controllers
             return View(automobil);
         }
 
-        // POST: Automobil/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -237,7 +218,7 @@ namespace WebAssigmentAutoKP.Controllers
         {
             return db.Automobili.Any(e => e.AutomobilId == id);
         }
-        public PartialViewResult _PretragaCena(double? min, double? max,string deoNaslova, string deoModela, int AutomobilId = 0) //mora da se zove isto kao i name atribut select controle KategorijaId i ti parametri mojau da se nadju na kraju 
+        public PartialViewResult _PretragaCena(double? min, double? max,string deoNaslova, string deoModela, int AutomobilId = 0)
         {
             IEnumerable<Automobil> listaAutomobila = db.Automobili;
             if (AutomobilId != 0)
@@ -281,13 +262,6 @@ namespace WebAssigmentAutoKP.Controllers
         }
         
 
-        //public IActionResult PrikaziProizvode(int? strana)
-        //{ //strana koju zelimo da prikazemo, strana zavisi od broja proizvoda po strani, kome mi oznacimo
-        //    IEnumerable<Automobil> listaProizvoda = db.Automobili;
-        //    int brojStrane = strana ?? 1; //ovo znaci ako nije prosledjena neka strana, prosledjuje se 1
-        //    int brojRedova = 6; //koliko redova po strani prikazuje
-        //    return View(listaProizvoda.ToPagedList(brojStrane, brojRedova)); //prvo priakzemo koju stranicu zelimo da prikazemo a ovo je konstanta koja predstavlja broj redova po strani
-        //}
 
     }
 }

@@ -4,13 +4,8 @@
 
 @model IPagedList<Automobil>
 
-@*ako ovo upisemo data-ajax="true" onda postaje ajax zahtjev   data-ajax-update="#div1" (ovo je element koji se osvjezava ajax zahtjevom)  *@
+
 <form id="form1" asp-action="_PretragaCena" data-ajax="true" data-ajax-update="#div1" asp-items="ViewBag.Automobili">
-    @*<div class="form-group">
-            <select id="Select1" name="AutomobilId" class="form-control" asp-items="ViewBag.Automobili">
-                <option value="0">Svi automobili</option>
-            </select>
-        </div>*@
     <div class="row">
         <div class="ml-1 col-md-5">
             <div class="form-group">
@@ -32,12 +27,6 @@
                 <Label for="Text1">@localizer["UnesiteMinCenu"]</Label>
                 <input type="text" name="min" id="Text1" class="form-control" data-val="true" data-val-number="Unesite broj" />
                 <span data-valmsg-for="min" data-valmsg-replace="true"></span>
-                @*SADRZAJ SPAN ELEEMNTA ZAMJENI SADRZAJEM VALIDACIONE GRESKE ne mora da se uci napamet *@
-                @*ovo nam je omoguceno zbog unobtrusive data-val="true"    data-val-number="Unesite broj" --nece moci da da ide dalje ako ne unese broj, ovo nije dovoljno da se napise tu, moramo dodati i npr span element gdje ce se ispisati poruka greske to se dodaje
-
-                    data-valmsg-for="min"--unutar ovog span elementa ce se prikazivati validaciona greska za polje min
-
-                    data-valmsg-replace="true" sadrzaj span elementa zamjeni sadrzajem validacione greske *@
             </div>
         </div>
         <div class="mr-1 col-md-5">
@@ -48,7 +37,6 @@
                 <button class="btn btn-primary float-right" type="button" onclick="Pronadji()">@localizer["Pronadji"]</button>
             </div>
 
-            @*<button class="btn btn-primary">Pronadji proizvod</button>*@
 
         </div>
     </div>
@@ -111,7 +99,6 @@
             @for (int i = 1; i <= Model.PageCount; i++)
             {
                 <li class="page-item @(Model.PageNumber == i ? "active" : "")">
-                    @*ovo  ==i? onda dodaj klasu active, ako je oznacena strana da se upali bootstrapova biblioteka active.ako nije na oznacenoj strani gasi se ta klasa*@
                     <a class="page-link" asp-action="Index" asp-route-strana="@i">@i</a>
                 </li>
             }
@@ -133,7 +120,7 @@
     <script>
 
         function Pronadji() {
-            var podaci = $("#form1").serialize(); //name value parove vraca, i sami mozemo da iscitamo, ne moramo ovako
+            var podaci = $("#form1").serialize();
             var zahtjev = $.ajax({
                 type: "GET",
                 url: "/Automobil/_PretragaCena",
@@ -149,10 +136,8 @@
         }
     </script>
 
-    @*ovo kopiramo iz _ValidationScriptsPartial.cshtml*@
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    @*poslednju mi dodajemo*@
     <script src="~/lib/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.min.js"></script>
 }
 
