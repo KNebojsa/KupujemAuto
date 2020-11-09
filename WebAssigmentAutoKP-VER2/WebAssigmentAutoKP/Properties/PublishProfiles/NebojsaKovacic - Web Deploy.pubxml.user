@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACeeqbXUPOUyekgB2qrM/KgAAAAACAAAAAAAQZgAAAAEAACAAAAAj0Hqm1JQWGKgIwPcq/h8jH6SFaqQ8r4LtiNG6cmSoRgAAAAAOgAAAAAIAACAAAABKXmW6qzxaJlGpKzgUdF4xyQFdcPY8IJAyP9YaGfJKMoAAAABMEz0K9B7hlMtVJsiXt5bnm3JQpR5iEB59EK4HOBgGhN46dZpdo2AQNCsFI01CtAyv0+5mvpKZBGQjredS9csEzG6igdTHVMn7kwzpzU3nK6kv2zLqp/cHOqn8gw0dfnUJG41xewTXME12nn84mZ8SbYi2w5rmJW3krPLbDIqwqEAAAAAiTU09QXBrIXB6+xBUU1WQFtWSyogC9WhFkS5xahz7nerCS46CyqjeOFDhhn2k1OIyUD44FK1yQFdyF4MO3338</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tcp:automobilsql.database.windows.net,1433;Initial Catalog=WebAssigmentAutoKP;User Id=KneleTopla2@automobilsql;Password=Nebojsa123" />
+    <AzureDBConnectionStrings Include="Server=tcp:automobilsql.database.windows.net,1433;Initial Catalog=WebAssigmentAutoKP;Persist Security Info=False;User ID=KneleTopla2;Password=Nebojsa123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30" />
+  </ItemGroup>
+</Project>

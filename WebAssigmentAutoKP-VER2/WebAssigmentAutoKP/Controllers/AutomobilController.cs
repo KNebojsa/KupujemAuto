@@ -64,6 +64,7 @@ namespace WebAssigmentAutoKP.Controllers
             int brojStrane = strana ?? 1;
             int brojRedova = 6;
             ViewBag.Automobili = new SelectList(db.Automobili, "AutomobilId", "Model");
+           
             return View(listaProizvoda.ToPagedList(brojStrane, brojRedova));
         }
         public async Task<IActionResult> Details(int? id)

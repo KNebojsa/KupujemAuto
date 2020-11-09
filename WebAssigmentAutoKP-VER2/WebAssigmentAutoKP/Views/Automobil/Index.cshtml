@@ -8,7 +8,13 @@
 <form id="form1" asp-action="_PretragaCena" data-ajax="true" data-ajax-update="#div1" asp-items="ViewBag.Automobili">
     <div class="row">
         <div class="ml-1 col-md-5">
+            @*<div class="form-group">
+            <select id="Select1" name="AutomobilId" class="form-control" asp-items=" ViewBag.Automobili">
+                <option value="0">Svi automobili</option>
+            </select>
+        </div>*@
             <div class="form-group">
+
                 <label for="text1">@localizer["UnesiteMarku"]</label>
                 <input type="text" id="text1" name="deoNaslova" class="form-control" />
             </div>
