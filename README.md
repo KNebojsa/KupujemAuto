@@ -7,5 +7,6 @@ Available functionalities:  Any user can search for vehicles available for purch
 Also, application supports three languages: Serbian, English and Italian.
 
 Application is published on Azure.
+Link: https://nebojsakovacic.azurewebsites.net/
 
 Role: Author
